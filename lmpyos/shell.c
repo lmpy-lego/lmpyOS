@@ -7,12 +7,9 @@
 char blueshell_query(char input[])
 {
 	if (input == "help")
-		help();
-	switch(input)
-	{
-		case "ls": puts("Filesystem commands have not yet been implemented.\n"); break;
-		case "who am I": puts(cuser.username); break;
-	}
+        help();
+    if (input == "who am i")
+        whoami();
 }
 char prompt()
 {
