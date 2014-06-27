@@ -13,16 +13,17 @@
 
 struct
 {
-	char username[];
-	char password[];
-	char loginclass[];
-	char description[];
+	char username[16];
+	char password[16];
+	char loginclass[16];
+	char description[128];
+	char uid;
 } cuser;
 
 /* Struct for the proposed user.  For user matching use only. */
 
 struct
 {
-	char username[];
-	char password[];
+	char username[16];
+	char password[16];
 } puser;
